@@ -27,8 +27,8 @@ main {
   padding-top: 9rem;
 }
 h1,
-h3,
-h4 {
+h2,
+h3 {
   font-weight: 700;
   color: hsl(300, 43%, 22%);
   margin: 0;
@@ -36,13 +36,14 @@ h4 {
 h1 {
   font-size: 3rem;
 }
-h3 {
+h2 {
   font-size: 0.8125rem;
 }
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 16.25rem;
+  align-items: center;
 }
 header section {
 }
@@ -55,6 +56,8 @@ header p {
 .rating-bars {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 3.5rem);
 }
 .rating-box:nth-child(1) {
   justify-self: start;
@@ -66,7 +69,7 @@ header p {
   justify-self: end;
 }
 .rating-box {
-  padding: 1.4rem 2rem;
+  padding: 1.125rem 2rem;
   border-radius: 0.5rem;
   background-color: hsl(300, 24%, 96%);
   width: 27.8125rem;
@@ -77,6 +80,9 @@ header p {
   align-items: center;
   gap: 2rem;
   /* margin-bottom: 1rem; */
+}
+.stars {
+  height: 1.125rem;
 }
 .reviews {
   margin-top: 4.5rem;
@@ -107,12 +113,12 @@ header p {
   width: 2.5rem;
   border-radius: 100%;
 }
-.name h4 {
+.name h3 {
   color: hsl(300, 24%, 96%);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.name h5 {
+.name h4 {
   font-weight: 400;
   color: hsl(333, 80%, 67%);
 }
@@ -126,7 +132,7 @@ header p {
   color: hsl(300, 24%, 96%);
 }
 .attribution {
-  margin-top: 3rem;
+  margin-top: 5rem;
   font-size: 12px;
   text-align: center;
   display: flex;
@@ -202,6 +208,7 @@ header p {
     grid-column: 1/-1;
   }
   .attribution {
+    margin-top: 3rem;
     margin-bottom: 3rem;
   }
 }
